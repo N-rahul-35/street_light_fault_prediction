@@ -1,0 +1,16 @@
+/* Content of bootstrap.min.css */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    /* Define other variables as needed */
+  }
+  
+  /* Example usage of CDN-hosted font and background color */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color);
+  }
+  
+  /* Your other Bootstrap styles and custom styles */
+  

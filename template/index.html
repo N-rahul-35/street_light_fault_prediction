@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Light Fault Predictor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5">Street Light Fault Prediction</h1>
+        <h3 class="text-center mb-4">Please enter the data below to get the result</h3>
+        <form action="{{ url_for('predict') }}" method="post" class="custom-form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="bulb_number" class="form-label">Bulb Number:</label>
+                        <input type="number" step="1" min="1" max="94" name="bulb_number" id="bulb_number" class="form-control" placeholder="Enter Bulb Number in range (1-94)" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="power_consumption" class="form-label">Power Consumption (Watts):</label>
+                        <input type="number" step="0.01" name="power_consumption" id="power_consumption" class="form-control" placeholder="Enter Power Comsuption in Watts" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="current_fluctuations" class="form-label">Current Fluctuations (Amperes)</label>
+                        <input type="number" step="0.0000000000001" name="current_fluctuations" id="current_fluctuations" class="form-control" placeholder="Enter Current Fluctuation in Amperes" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="environmental_conditions" class="form-label">Environmental Condition:</label>
+                        <select name="environmental_conditions" id="environmental_conditions" class="form-select" required>
+                            <option value="">Select Environmental Condition</option>
+                            <option value="Clear">Clear</option>
+                            <option value="Rainy">Rainy</option>
+                            <option value="Cloudy">Cloudy</option>
+                        </select>
+                    </div>
+                    
+                                                                                                                                
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="timestamp" class="form-label">Date and Time of Occurence:</label>
+                        <input type="text"  name="timestamp" class="form-control" placeholder="Enter Date and Time of Occurence" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="voltage_levels" class="form-label">Voltage Levels (Volts):</label>
+                        <input type="number" step="0.01" name="voltage_levels" id="voltage_levels" class="form-control" placeholder="Enter Voltage Level in Volts" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="temperature" class="form-label">Temperature (Celsius):</label>
+                        <input type="number" step="0.01" name="temperature" id="temperature" class="form-control" placeholder="Enter Temperature in Celsius" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="current_fluctuations_env" class="form-label">Current Fluctuations Env (Amperes):</label>
+                        <input type="number" step="0.01" name="current_fluctuations_env" id="current_fluctuations_env" class="form-control" placeholder="Enter Current Fluctuations Env in Amperes" required>
+                    </div>
+                    
+
+                </div>
+            </div>
+            
+          
+             <button type="submit" class="btn btn-primary" style="display:block; margin: 0 auto;">Predict</button>
+        </form>
+    </div>
+                    <script src="../static/js/bootstrap.bundle.min.js"></script>
+                    </body>
+                    </html>
+                 */   
+
+        
